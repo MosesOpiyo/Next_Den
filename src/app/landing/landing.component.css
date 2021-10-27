@@ -37,12 +37,17 @@
     margin-top: 150px;
 }
 
-.col h3 {
+.col h1 {
     padding-left: 100px;
     margin-top: 45%;
 }
 
-.house h2 {
-    padding-top: 50px;
-    text-align: center;
+.col h2 {
+    padding-left: 100px;
+    margin-top: 20px;
+}
+
+.col h3 {
+    padding-left: 100px;
+    margin-top: 20px;
 }
