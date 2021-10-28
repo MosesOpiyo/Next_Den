@@ -14,12 +14,7 @@
     color: rgb(255, 255, 255);
 }
 
-.navbar ul li {
-    list-style: none;
-    display: inline-block;
+a {
+    padding-right: 70px;
     font-size: 25px;
-    margin: 0 20px;
-    padding-top: 15px;
-    color: rgb(255, 255, 255);
-    padding-right: 100px;
 }

@@ -14,21 +14,13 @@
     justify-content: space-between;
 }
 
-.navbar h1 {
-    padding-left: 90px;
-    padding-top: 75px;
-    font-size: 50px;
-    color: white;
+a {
+    padding-right: 70px;
+    font-size: 25px;
 }
 
-.navbar ul li {
-    list-style: none;
-    display: inline-block;
-    font-size: 25px;
-    margin: 0 20px;
-    padding-top: 75px;
-    color: white;
-    padding-right: 100px;
+button {
+    background-color: transparent;
 }
 
 .card {
