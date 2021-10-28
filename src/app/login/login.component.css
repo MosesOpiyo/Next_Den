@@ -1,0 +1,32 @@
+form {
+    margin: 18%;
+}
+
+input {
+    width: 100%;
+    height: 8vh;
+    background-color: transparent;
+    border: 2px solid blue;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+
+button {
+    width: 100%;
+    height: 8vh;
+    background-color: transparent;
+    border: 2px solid blue;
+    border-radius: 20px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: blue
+}
+
+.col-2 {
+    background-image: url(src/app/statics/pexels-binyamin-mellish-106399.jpg);
+    background-position: center;
+    background-size: cover;
+}
