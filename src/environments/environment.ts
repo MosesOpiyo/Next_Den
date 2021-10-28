@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  API_REGISTER_URL:"https://makaomapya.herokuapp.com/",
+  API_LOGIN_URL:"https://makaomapya.herokuapp.com/login",
+  API_HOUSE_URL:"https://makaomapya.herokuapp.com/house/"
 };
 
 /*
