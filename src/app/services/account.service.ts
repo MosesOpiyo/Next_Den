@@ -12,6 +12,15 @@ export class AccountService {
     this.http.post(`${environment.BASE_URL}login`,credentials).subscribe(response => {
       const holder:any = response
       sessionStorage.setItem('token',holder['token'])
+      this.route.navigate(['landing'])
+    },error => {
+      console.log(error)
+    })
+  }
+
+  signup(credentials:any){
+    this.http.post(`${environment.BASE_URL}`,credentials).subscribe(response => {
+      this.route.navigate([''])
     },error => {
       console.log(error)
     })
