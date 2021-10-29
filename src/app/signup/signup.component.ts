@@ -17,11 +17,11 @@ export class SignupComponent implements OnInit {
   
   registerUser(){
     this.service.userPost(this.user).subscribe((result:any)=>{
-      this.user = result;
-      console.log(this.user)
+      console.warn(result)
       
     },error=>{
-      alert("There was a problem with the signing up",)
+      alert("There was a problem with the signing up")
+      console.warn(error)
     })
   }
   ngOnInit(): void {

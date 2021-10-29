@@ -13,6 +13,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { Routes } from '@angular/router';
+import { HouseComponent } from './house/house.component';
 
 const routes:Routes = [
   {
@@ -51,7 +52,8 @@ const routes:Routes = [
     SingleComponent,
     ProfileComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    HouseComponent
   ],
   imports: [
     BrowserModule,
