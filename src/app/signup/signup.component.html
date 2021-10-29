@@ -7,18 +7,18 @@
         </div>
         <div class="col-2" style="width: 50%;">
             <div class="card" style="width: 60%;height: 80vh;margin: 18%;border-radius: 50px;">
-                <form action="">
-                    <h2>Login into your Account</h2>
+                <form #signupForm="ngForm" (ngSubmit)="registerUser()">
+                    <h2>Sign up for a new Account</h2>
                     <br>
-                    <input type="text" placeholder="Email">
+                    <input type="text" ngModel name="username" placeholder="Username">
                     <br>
-                    <input type="text" placeholder="Password">
+                    <input type="text" ngModel name="email" placeholder="Email">
                     <br>
-                    <input type="text" placeholder="Confirm Password">
+                    <input type="text" ngModel name="password" placeholder="Password">
                     <br>
                     <button type="submit">Login</button>
                     <p>Don't have an account?</p>
-                    <a href="">Register here</a>
+                    <a routerLink="/login">Register here</a>
                 </form>
 
             </div>
