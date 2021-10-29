@@ -4,9 +4,9 @@
             <form (ngSubmit)="loginUser()" #loginForm='ngForm'>
                 <h2>Login into your Account</h2>
                 <br>
-                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Email" name="email" [(ngModel)]="email">
                 <br>
-                <input type="text" placeholder="Password">
+                <input type="password" placeholder="Password" name="password" [(ngModel)]="password">
                 <br>
                 <button type="submit">Login</button>
                 <p>Don't have an account?</p>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AccountService } from '../services/account.service';
 
 @Component({
   selector: 'app-login',
@@ -8,10 +9,14 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private route:Router) { }
-
+  constructor(private route:Router,private accountService:AccountService) { }
+  email:string = "";
+  password: string = "";
   loginUser(){
-    this.route.navigate(['landing'])
+    let credentials = new FormData()
+    credentials.append('username',this.email)
+    credentials.append('password',this.password)
+    this.accountService.login(credentials)
   }
   ngOnInit(): void {
   }
