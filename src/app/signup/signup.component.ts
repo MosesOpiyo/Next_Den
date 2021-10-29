@@ -1,5 +1,7 @@
+import { AccountService } from './../services/account.service';
 import { Component, OnInit } from '@angular/core';
 import { HouseService } from '../services/house.service';
+
 import { User } from '../user';
 
 @Component({
@@ -8,22 +10,19 @@ import { User } from '../user';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
+  user = new User("","","")
 
-  
-  user= new User("","","")
 
-  constructor(private service:HouseService) { }
-
-  
-  registerUser(){
-    this.service.userPost(this.user).subscribe((result:any)=>{
-      console.warn(result)
-      
-    },error=>{
-      alert("There was a problem with the signing up")
-      console.warn(error)
-    })
+  signupUser(){
+    let userForm = new FormData()
+    userForm.append('email',this.user.email)
+    userForm.append('username',this.user.username)
+    userForm.append('password',this.user.password)
+    this.accountService.signup(this.user)
   }
+
+  constructor(private accountService: AccountService) { }
+
   ngOnInit(): void {
   }
 }
